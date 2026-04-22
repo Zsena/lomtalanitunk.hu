@@ -1,0 +1,232 @@
+﻿<!DOCTYPE html>
+<html lang="hu">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Veszélyes hulladék elszállítás | lomtalanitunk.hu</title>
+  <meta name="description" content="Előzetes egyeztetéssel, szabályosan és engedéllyel rendelkező partner bevonásával.">
+  <meta name="keywords" content="veszélyes hulladék elszállítás, hulladékkezelés, engedélyezett elszállítás">
+  <link rel="canonical" href="https://lomtalanitunk.hu/veszelyes-hulladek-elszallitas.html">
+  <meta property="og:locale" content="hu_HU">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="lomtalanitunk.hu">
+  <meta property="og:title" content="Veszélyes hulladék elszállítás | lomtalanitunk.hu">
+  <meta property="og:description" content="Előzetes egyeztetéssel, szabályosan és engedéllyel rendelkező partner bevonásával.">
+  <meta property="og:url" content="https://lomtalanitunk.hu/veszelyes-hulladek-elszallitas.html">
+  <meta property="og:image" content="https://lomtalanitunk.hu/img/pexels-cottonbro-5090640.webp">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Veszélyes hulladék elszállítás | lomtalanitunk.hu">
+  <meta name="twitter:description" content="Előzetes egyeztetéssel, szabályosan és engedéllyel rendelkező partner bevonásával.">
+  <meta name="twitter:image" content="https://lomtalanitunk.hu/img/pexels-cottonbro-5090640.webp">
+  <meta name="robots" content="index,follow">
+  <link rel="icon" type="image/svg+xml" href="img/logo.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700&family=Source+Sans+3:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="site-redesign.css" rel="stylesheet">
+  <script defer src="js/nav-menu.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.14.8/dist/cdn.min.js"></script>
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=AW-18104190845"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'AW-18104190845');
+</script>
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-1WGK4PYKH2"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  
+  gtag('config', 'G-1WGK4PYKH2');
+</script>
+</head>
+<body>
+  <header class="top-contact">
+    <div class="wrap top-contact__inner">
+      <p class="contact-chip">
+        <span class="contact-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" width="14" height="14" fill="none"><path d="M5 4h3l2 5-2 1.5a14 14 0 0 0 5.5 5.5L15 14l5 2v3a2 2 0 0 1-2 2C10.8 21 3 13.2 3 6a2 2 0 0 1 2-2Z" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </span>
+        <a href="tel:+36708575619">0670 857 56 19</a>
+      </p>
+      <p class="contact-chip">
+        <span class="contact-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" width="14" height="14" fill="none"><rect x="3" y="5" width="18" height="14" rx="2" stroke="currentColor" stroke-width="1.8"/><path d="m4 7 8 6 8-6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </span>
+        <a href="mailto:info@lomtalanitunk.hu">info@lomtalanitunk.hu</a>
+      </p>
+      <a class="btn btn-red top-cta" href="tel:+36708575619">Hívás most</a>
+    </div>
+  </header>
+  <nav class="main-nav" x-data="navMenu()" @keydown.escape.window="close()">
+    <div class="wrap nav-inner">
+      <a href="index.html" class="brand" aria-label="lomtalanitunk.hu főoldal">
+        <img src="img/logo.svg" alt="lomtalanitunk.hu logó" width="92" height="52">
+        <span class="brand-copy"><strong>Lomtalanítás</strong><small>lomtalanitunk.hu / gyors kiszállás</small></span>
+      </a>
+      <button class="menu-toggle" type="button" aria-label="Menü megnyitása" :aria-expanded="isOpen.toString()" @click="toggle()">☰</button>
+      <div class="menu-backdrop" :class="{ 'is-open': isOpen }" @click="close()"></div>
+      <div class="nav-panel" id="siteNav" :class="{ 'is-open': isOpen }" @click="if ($event.target.closest('a')) close()" @click.outside="if (isOpen) close()">
+        <button class="menu-close" type="button" aria-label="Menü bezárása" @click="close()">✕</button>
+        <div class="nav-links">
+          <a href="index.html">Főoldal</a>
+          <a href="rolunk.html">Rólunk</a>
+          <div class="nav-dropdown">
+            <button class="nav-dropbtn" type="button" aria-haspopup="true">Szolgáltatások</button>
+            <div class="dropdown-menu">
+              <a href="szemet-elszallitas-haztol.html">Szemét elszállítás háztól</a>
+              <a href="veszelyes-hulladek-elszallitas.html">Veszélyes hulladék elszállítás</a>
+              <a href="elektromos-hulladek-gumiabroncs-elszallitas.html">Elektromos hulladék, gumiabroncs</a>
+              <a href="palateto-elszallitas.html">Palatető elszállítás</a>
+              <a href="csaladi-haz-lakas-kiurites.html">Családi ház, lakás kiürítés</a>
+              <a href="hagyateki-lomtalanitas.html">Hagyatéki lomtalanítás</a>
+            </div>
+          </div>
+          <a href="index.html#gyik">GYIK</a>
+        </div>
+        <a class="btn btn-blue nav-call" href="tel:+36708575619">0670 857 56 19</a>
+      </div>
+    </div>
+  </nav>
+
+  <main>
+    <section class="section section-blue">
+      <div class="wrap">
+        <h1>Veszélyes hulladék elszállítás</h1>
+        <p class="lead">Szakmai egyeztetéssel és szabályos folyamattal szervezzük meg az elszállítást.</p>
+      </div>
+    </section>
+
+    <section class="section section-light">
+      <div class="wrap split-grid">
+        <div>
+          <h2>Mit tartalmaz a szolgáltatás?</h2>
+          <p>Előzetes egyeztetéssel, szabályosan és engedéllyel rendelkező partner bevonásával.</p>
+          <ul class="check-list">
+            <li>Telefonos egyeztetés és mennyiségfelmérés</li>
+            <li>Pontos időpontegyeztetés</li>
+            <li>Kihordás és rakodás</li>
+            <li>Elszállítás és rendezett lezárás</li>
+          </ul>
+          <p class="service-note"><strong>Fontos:</strong> Lomtalanítást és kiürítést Budapest és az ország teljes területén végezzük. Kérjen ingyenes ajánlatot! <a class="btn btn-blue service-note-phone" href="tel:+36708575619">0670 857 56 19</a></p>
+          <a class="btn btn-red" href="tel:+36708575619">Egyeztetés: 0670 857 56 19</a>
+        </div>
+        <aside class="highlight-box">
+          <img src="img/pexels-cottonbro-5090640.webp" alt="Veszélyes hulladék elszállítás" loading="lazy" style="border-radius:12px; margin-bottom:0.8rem;">
+          <h3>Kolibri-Sun Kft.</h3>
+          <p>3973 Cigánd, József A. u. 24.</p>
+          <p>Adószám: 25467006-1-05</p>
+          <p>Telefon: <a href="tel:+36708575619">0670 857 56 19</a></p>
+        </aside>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap footer-grid footer-grid--extended">
+      <div>
+        <a href="index.html" class="footer-brand">
+          <img src="img/logo.svg" alt="lomtalanitunk.hu logó" width="94" height="54">
+          <span class="footer-brand-copy"><strong>Lomtalanítás</strong><small>lomtalanitunk.hu / gyors kiszállás</small></span>
+        </a>
+        <p>Gyors, szervezett lomtalanítás lakossági és céges megrendelőknek.</p>
+      </div>
+      <div>
+        <h3>Kapcsolat</h3>
+        <p><span class="icon-label"><span class="contact-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none"><path d="M5 4h3l2 5-2 1.5a14 14 0 0 0 5.5 5.5L15 14l5 2v3a2 2 0 0 1-2 2C10.8 21 3 13.2 3 6a2 2 0 0 1 2-2Z" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></span><a href="tel:+36708575619">0670 857 56 19</a></span></p>
+        <p><span class="icon-label"><span class="contact-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none"><rect x="3" y="5" width="18" height="14" rx="2" stroke="currentColor" stroke-width="1.8"/><path d="m4 7 8 6 8-6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></span><a href="mailto:info@lomtalanitunk.hu">info@lomtalanitunk.hu</a></span></p>
+        <p><a href="rolunk.html">Rólunk</a></p>
+        <p><a href="kapcsolat.html">Kapcsolat</a></p>
+      </div>
+      <div>
+        <h3>Szolgáltatások</h3>
+        <p><a href="szemet-elszallitas-haztol.html">Szemét elszállítás háztól</a></p>
+        <p><a href="veszelyes-hulladek-elszallitas.html">Veszélyes hulladék elszállítás</a></p>
+        <p><a href="elektromos-hulladek-gumiabroncs-elszallitas.html">Elektromos hulladék, gumiabroncs</a></p>
+        <p><a href="palateto-elszallitas.html">Palatető elszállítás</a></p>
+        <p><a href="csaladi-haz-lakas-kiurites.html">Családi ház, lakás kiürítés</a></p>
+        <p><a href="hagyateki-lomtalanitas.html">Hagyatéki lomtalanítás</a></p>
+      </div>
+      <div>
+        <h3>Gyors linkek</h3>
+        <p><a href="index.html#szolgaltatasok">Szolgáltatások</a></p>
+        <p><a href="index.html#gyik">GYIK</a></p>
+        <p><a href="cikkek.html">Cikkek</a></p>
+        <p><a href="adatvedelem.html">Adatkezelési tájékoztató</a></p>
+        <p><a href="impressum.html">Impresszum</a></p>
+      </div>
+    </div>
+    <div class="footer-copy">
+      <div class="wrap">© Weboldalt designolta és fejlesztette a <a href="https://geekrabbits.hu" target="_blank" rel="noopener noreferrer">Geekrabbits.hu</a>. MINDEN JOG FENNTARTVA.</div>
+    </div>
+  </footer>
+<script>
+(function () {
+  const root = document.documentElement;
+
+        document.querySelectorAll("section h1, section h2, section h3, section h4, section p, section li, section .btn, section .service-card, section .area-grid article, section .review-grid blockquote, section .highlight-box, section .faq-item, section .article-card, section .article-card-link, section .service-note, section .section-kicker, section img, .gallery-slider").forEach((el) => {
+        el.classList.add("reveal");
+      });
+
+      // Szolgáltatás-listán belül ne animálódjon külön a kártya tartalma.
+      document.querySelectorAll(".service-grid .service-card *").forEach((el) => {
+        el.classList.remove("reveal");
+      });
+      document.querySelectorAll(".service-grid .service-card").forEach((el) => {
+        el.classList.add("reveal");
+      });
+
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) entry.target.classList.add("in-view");
+    });
+  }, { threshold: 0.2, rootMargin: "0px 0px -8% 0px" });
+
+  document.querySelectorAll(".reveal").forEach((el) => observer.observe(el));
+})();
+</script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
